@@ -20,7 +20,7 @@ public class AccessTokenCredentials implements ICredentials {
 
 	@Override
 	public void authenticate(HttpRequest req) {
-		req.addHeader("Authentication", "Bearer " + accessToken);
+		req.addHeader("Authorization", "Bearer " + accessToken);
 	}
 
 	@Override
